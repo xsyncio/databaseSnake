@@ -1,0 +1,93 @@
+[project]
+name = "databasesnake"
+version = "1.0.0"
+description = "Hyper-optimized database search tool with type-perfect implementation"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Xsyncio", email = "xsyncio@users.noreply.github.com" }
+]
+keywords = ["database", "search", "csv", "txt", "sql", "parallel"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Database",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+]
+dependencies = [
+    "rich>=13.0.0",
+    "typing_extensions>=4.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "basedpyright>=1.18.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/xsyncio/databaseSnake"
+Repository = "https://github.com/xsyncio/databaseSnake"
+Issues = "https://github.com/xsyncio/databaseSnake/issues"
+
+[project.scripts]
+databasesnake = "dbsearcher.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["dbsearcher*"]
+exclude = ["base*", "tests*"]
+
+[tool.basedpyright]
+pythonVersion = "3.10"
+pythonPlatform = "Linux"
+typeCheckingMode = "all"
+reportMissingImports = "error"
+reportMissingTypeStubs = "error"
+reportUnusedImport = "error"
+reportUnusedVariable = "error"
+reportUnusedFunction = "error"
+reportUnusedClass = "error"
+reportPrivateUsage = "error"
+reportConstantRedefinition = "error"
+reportIncompatibleMethodOverride = "error"
+reportIncompatibleVariableOverride = "error"
+reportInconsistentConstructor = "error"
+reportOverlappingOverload = "error"
+reportUninitializedInstanceVariable = "error"
+reportInvalidStringEscapeSequence = "error"
+reportUnknownParameterType = "error"
+reportUnknownArgumentType = "error"
+reportUnknownLambdaType = "error"
+reportUnknownVariableType = "error"
+reportUnknownMemberType = "error"
+reportMissingParameterType = "error"
+reportMissingTypeArgument = "error"
+reportCallInDefaultInitializer = "error"
+reportUnnecessaryIsInstance = "error"
+reportUnnecessaryCast = "error"
+reportUnnecessaryComparison = "error"
+reportUnnecessaryContains = "error"
+reportAssertAlwaysTrue = "error"
+reportSelfClsParameterName = "error"
+reportImplicitStringConcatenation = "error"
+reportUndefinedVariable = "error"
+reportUnboundVariable = "error"
+reportInvalidStubStatement = "error"
+reportIncompleteStub = "error"
+reportUnsupportedDunderAll = "error"
+reportUnusedCallResult = "none"
+reportUnusedCoroutine = "error"
+reportUnusedExpression = "error"
+reportMatchNotExhaustive = "error"
+reportImplicitOverride = "error"
+include = ["dbsearcher"]
+exclude = ["**/node_modules", "**/__pycache__", ".git"]
