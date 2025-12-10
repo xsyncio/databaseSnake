@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/xsyncio/databaseSnake/stargazers"><img src="https://img.shields.io/github/stars/xsyncio/databaseSnake?style=for-the-badge&logo=starship&color=yellow&logoColor=white" alt="Stars"></a>
+  <img src="https://img.shields.io/github/stars/xsyncio/databasesnake?style=for-the-badge&logo=starship&color=yellow&logoColor=white" alt="Stars">
   <a href="https://github.com/xsyncio/databaseSnake/issues"><img src="https://img.shields.io/github/issues/xsyncio/databaseSnake?style=for-the-badge&logo=gitbook&color=red&logoColor=white" alt="Issues"></a>
   <a href="https://github.com/xsyncio/databaseSnake/blob/main/LICENSE"><img src="https://img.shields.io/github/license/xsyncio/databaseSnake?style=for-the-badge&logo=unlicense&color=green&logoColor=white" alt="License"></a>
   <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python"></a>
